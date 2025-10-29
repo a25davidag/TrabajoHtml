@@ -50,6 +50,7 @@ nav a:hover {
   color: white;
   text-align: center;
   padding: 100px 20px;
+  font: optional;
 }
 .encabezado-content {
   background: rgba(0, 0, 0, 0.6);
@@ -61,6 +62,7 @@ nav a:hover {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
+
 /* === SECCIONES === */
 section {
   padding: 50px 20px;
@@ -93,4 +95,10 @@ section {
 .resumen-jornada img {
   width: 100%;
   border-radius: 10px;
+}
+/*-----------------------------------------------------------*/
+.jornadas h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: Henny Penny, cursive;
 }
