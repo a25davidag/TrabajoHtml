@@ -97,13 +97,58 @@ section {
   border-radius: 10px;
 }
 /*-----------------------------------------------------------*/
-.jornadas h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  font-family: Henny Penny, cursive;
+.jornadas {
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
 }
-.celta img {
+
+.jornadas h2 {
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.partido {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.equipos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.partido h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.logo {
   width: 50px;
   height: 50px;
-  border-radius: 5%;
+  object-fit: contain;
+}
+
+.vs {
+  font-weight: bold;
+  color: #555;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+.partido p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
 }
