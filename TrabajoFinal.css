@@ -100,12 +100,16 @@ section {
 /*-------------------------------partidos---------------------------*/
 /* ======= JORNADAS ======= */
 .jornadas {
-  background: #ffffff;
-  border-radius: 16px;
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: linear-gradient(90deg, #e30613, #ff4d4d);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.ligas{
+  background: linear-gradient(90deg, #e30613, #ff4d4d);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 .jornadas h2 {
@@ -141,9 +145,11 @@ section {
 }
 
 .logo-equipo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 
 .partido h3 {
@@ -165,117 +171,132 @@ section {
 }
 /*--------------clasificacion------------------*/
 /*-------------- CLASIFICACIÓN ------------------*/
-body.clasificacion {
-  height: 100%;
-  width: 100%;
+body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0b1420;
-  color: #fff;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-/* Contenedor principal de la sección */
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh; /* asegura que ocupe toda la pantalla */
-  width: 100%;
-  padding: 20px;
-  background: #122030;
-}
-
-/* Título */
-.clasi {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.liga {
-  font-size: 2.5rem;
-}
-.liga span {
-  color: #58c9f3;
-  font-weight: 400;
-}
-
-/* Contenedor de la tabla */
-.cabeceraTabla {
-  flex: 1;
-  overflow-y: auto;
-  border-radius: 12px;
-}
-
-/* Tabla */
-.cabeceraTabla table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #182738;
-  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
-/* Fila de cabecera */
-.cabeceraTabla tr:first-child {
-  background-color: #1a2d44;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-/* Filas */
-tr {
+/* ======= CABECERA ======= */
+.clasi {
+  background: linear-gradient(90deg, #e30613, #ff4d4d);
+  padding: 20px;
   text-align: center;
-  transition: background 0.2s ease;
+  color: #fff;
 }
 
-.cabeceraTabla tr:nth-child(even):not(:first-child) {
-  background-color: #1c2d44;
+.liga {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
-.cabeceraTabla tr:hover:not(:first-child) {
-  background-color: #22405d;
+.liga span {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-/* Celdas */
+/* ======= TABLA ======= */
+.cabeceraTabla {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+}
+table tr:first-child {
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+}
+
 td {
-  padding: 10px;
-  vertical-align: middle;
+  padding: 12px 8px;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Columna de equipos */
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #ffeaea;
+  transition: background 0.3s ease;
+}
+
+/* ======= EQUIPOS ======= */
 .equipo {
-  display: flex;
+  font-display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 10px;
-}
-.equipo img {
-  width: 25px;
-  height: 25px;
+  text-align: left;
 }
 
-/* Forma de resultados */
+.equipo img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* ======= FORMA ======= */
+.forma {
+font-display: swap;
+  justify-content: center;
+  gap: 6px;
+}
+
 .forma span {
   display: inline-block;
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  margin: 0 1px;
-  font-size: 0.8rem;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
   font-weight: bold;
-  line-height: 22px;
-  color: white;
+  color: #fff;
+  font-size: 0.8rem;
 }
 
-.win  { background-color: #2ecc71; } /* Verde */
-.draw { background-color: #f1c40f; } /* Amarillo */
-.lose { background-color: #e74c3c; } /* Rojo */
-
-/* Scrollbar personalizado */
-.cabeceraTabla::-webkit-scrollbar {
-  width: 8px;
+/* Colores según resultado */
+.Victoria {
+  background: #2ecc71;
 }
-.cabeceraTabla::-webkit-scrollbar-thumb {
-  background-color: #58c9f3;
-  border-radius: 4px;
+
+.Empate {
+  background: #f1c40f;
+}
+
+.Perdido {
+  background: #e74c3c;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 700px) {
+  .liga {
+    font-size: 1.5rem;
+  }
+  table td {
+    padding: 8px 4px;
+    font-size: 0.85rem;
+  }
+  .equipo img {
+    width: 22px;
+    height: 22px;
+  }
 }
