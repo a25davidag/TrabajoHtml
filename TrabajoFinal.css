@@ -323,10 +323,11 @@ font-display: swap;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 25px;
-  color: #002b5c; 
-  background-color: #ad3f3f;
-  padding-bottom: 1px;
-  letter-spacing: 1.5px;
+  color: #ffffff;
+  border-bottom: 3px solid #e30613; /* rojo del tema */
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+  background-color:#0b213a;
 }
 .imagen-noticia {
 display: flex;
