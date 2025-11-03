@@ -1,3 +1,5 @@
+/* === Inicio === */
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
@@ -44,7 +46,6 @@ nav a {
 nav a:hover {
   color: #ffcc00;
 }
-/*------------------*/
 .encabezado {
   background: url("https://images.ecestaticos.com/Iwk5KDaNg4-gNrEUD8jx-XYSAFA=/0x174:2272x1451/1338x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F616%2F0f1%2F877%2F6160f1877ee2d6bde0e4467f634e2160.jpg") center/cover no-repeat;
   color: white;
@@ -70,7 +71,7 @@ section {
   margin: auto;
   text-align: center;
 }
-/* === Noticias destacadas === */
+/* === --------------------------------------------------Noticias destacadas === */
 
 .resumen-contenido {
   display: flex;
@@ -96,28 +97,38 @@ section {
   width: 100%;
   border-radius: 10px;
 }
-/*-----------------------------------------------------------*/
+/*-------------------------------partidos---------------------------*/
+/* ======= JORNADAS ======= */
 .jornadas {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 3rem auto;
   padding: 2rem;
-  background: #f8f8f8;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 2rem auto;
-  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .jornadas h2 {
-  color: #003366;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  color: #002b5c;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* ======= PARTIDOS ======= */
 .partido {
-  background: #fff;
+  background: #f9f9f9;
+  border-radius: 12px;
   padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partido:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .equipos {
@@ -129,26 +140,142 @@ section {
   margin-bottom: 1rem;
 }
 
-.partido h3 {
-  margin: 0;
-  font-size: 1.3rem;
-  color: #222;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
+.logo-equipo {
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
+.partido h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #002b5c;
+}
+
 .vs {
+  color: #ffcc00;
   font-weight: bold;
-  color: #555;
   margin: 0 5px;
   font-size: 1.2rem;
 }
 
 .partido p {
-  margin: 0.3rem 0;
+  margin: 0.4rem 0;
   font-size: 1rem;
+}
+/*--------------clasificacion------------------*/
+/*-------------- CLASIFICACIÓN ------------------*/
+body.clasificacion {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1420;
+  color: #fff;
+}
+
+/* Contenedor principal de la sección */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh; /* asegura que ocupe toda la pantalla */
+  width: 100%;
+  padding: 20px;
+  background: #122030;
+}
+
+/* Título */
+.clasi {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.liga {
+  font-size: 2.5rem;
+}
+.liga span {
+  color: #58c9f3;
+  font-weight: 400;
+}
+
+/* Contenedor de la tabla */
+.cabeceraTabla {
+  flex: 1;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+/* Tabla */
+.cabeceraTabla table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #182738;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Fila de cabecera */
+.cabeceraTabla tr:first-child {
+  background-color: #1a2d44;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Filas */
+tr {
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.cabeceraTabla tr:nth-child(even):not(:first-child) {
+  background-color: #1c2d44;
+}
+
+.cabeceraTabla tr:hover:not(:first-child) {
+  background-color: #22405d;
+}
+
+/* Celdas */
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+/* Columna de equipos */
+.equipo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.equipo img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Forma de resultados */
+.forma span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  margin: 0 1px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 22px;
+  color: white;
+}
+
+.win  { background-color: #2ecc71; } /* Verde */
+.draw { background-color: #f1c40f; } /* Amarillo */
+.lose { background-color: #e74c3c; } /* Rojo */
+
+/* Scrollbar personalizado */
+.cabeceraTabla::-webkit-scrollbar {
+  width: 8px;
+}
+.cabeceraTabla::-webkit-scrollbar-thumb {
+  background-color: #58c9f3;
+  border-radius: 4px;
 }
