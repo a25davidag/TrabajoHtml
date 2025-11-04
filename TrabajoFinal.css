@@ -64,14 +64,14 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* === SECCIONES === */
+/* ---------- SECCIONES -------- */
 section {
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
-/* === --------------------------------------------------Noticias destacadas === */
+/*------Noticias destacadas ------------- */
 
 .resumen-contenido {
   display: flex;
@@ -98,7 +98,7 @@ section {
   border-radius: 10px;
 }
 /*-------------------------------partidos---------------------------*/
-/* ======= JORNADAS ======= */
+/* ------- JORNADAS ----- */
 .jornadas {
   background: linear-gradient(90deg, #e30613, #ff4d4d);
   padding: 20px;
@@ -169,7 +169,6 @@ section {
   margin: 0.4rem 0;
   font-size: 1rem;
 }
-/*--------------clasificacion------------------*/
 /*-------------- CLASIFICACIÓN ------------------*/
 body {
   font-family: 'Poppins', sans-serif;
@@ -188,7 +187,7 @@ body {
   overflow: hidden;
 }
 
-/* ======= CABECERA ======= */
+/* -------- CABECERA ------ */
 .clasi {
   background: linear-gradient(90deg, #e30613, #ff4d4d);
   padding: 20px;
@@ -208,7 +207,7 @@ body {
   opacity: 0.9;
 }
 
-/* ======= TABLA ======= */
+/* ------- TABLA ------- */
 .cabeceraTabla {
   padding: 20px;
 }
@@ -239,7 +238,7 @@ tr:hover {
   transition: background 0.3s ease;
 }
 
-/* ======= EQUIPOS ======= */
+/* ------- EQUIPOS ------- */
 .equipo {
   font-display: flex;
   align-items: center;
@@ -255,7 +254,6 @@ tr:hover {
   background: #fff;
 }
 
-/* ======= FORMA ======= */
 .forma {
 font-display: swap;
   justify-content: center;
@@ -286,23 +284,6 @@ font-display: swap;
   background: #e74c3c;
 }
 
-/* ======= RESPONSIVE ======= */
-@media (max-width: 700px) {
-  .liga {
-    font-size: 1.5rem;
-  }
-  table td {
-    padding: 8px 4px;
-    font-size: 0.85rem;
-  }
-  .equipo img {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-
-/*================================================*/
 /* ---------- SECCIÓN NOTICIA DETALLADA ---------- */
 .noticia {
   background: #fff;
@@ -356,21 +337,5 @@ margin-bottom: 25;
 
 .texto-noticia p {
   margin-bottom: 18px;
-}
-
-/* Adaptación responsive */
-@media (max-width: 768px) {
-  .noticia {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .titulo-noticia {
-    font-size: 1.6rem;
-  }
-
-  .texto-noticia {
-    font-size: 1rem;
-  }
 }
 
