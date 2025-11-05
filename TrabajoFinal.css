@@ -1,6 +1,6 @@
 /* === Inicio === */
 body.fondo-Inicio {
-  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -113,7 +113,7 @@ section {
 /*-------------------------------partidos---------------------------*/
 /* ------- JORNADAS ----- */
 body.fondo-Partidos {
-  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
