@@ -20,9 +20,15 @@ body {
   background-color: #f5f5f5;
   color: #222;
 }
-
+#resumen h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(184, 5, 5, 0.7);
+}
 header {
-  background-color: #16030d;
+  background: linear-gradient(10deg, #b31f29, #d8985cb6);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -329,7 +335,7 @@ font-display: swap;
 
 /* ---------- SECCIÓN NOTICIA DETALLADA ---------- */
 body.fondo-Noticia {
-  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -483,7 +489,7 @@ body.fondo-formulario::before {
 }
 
 .form-sorteo button {
-  background: linear-gradient(90deg, #16030d, #ffcc00);
+background: linear-gradient(10deg, #b31f29, #d8985cb6);
   color: white;
   padding: 14px;
   border: none;
@@ -496,6 +502,6 @@ body.fondo-formulario::before {
 
 .form-sorteo button:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #ffcc00, #16030d);
+  background: linear-gradient(90deg, #ffcc00, #af1366);
   color: white;
 }
