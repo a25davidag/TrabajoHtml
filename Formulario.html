@@ -1,0 +1,151 @@
+<DOCTYPE html>
+<html lang="Español">
+<head>
+  <link href="TrabajoFinal.css" rel="stylesheet" Type = "text/css">
+  <meta charset="UTF-8">
+  <title> Todo </title>
+  <head>
+<body class="fondo-formulario">
+  <header>
+  <div class="logo">
+    <img src="https://play-lh.googleusercontent.com/TZ1p1DGUDmJFUx7wTOIM5GVt4biMyCNtfswjvPonUHcZmOz-Xk0ADQOuHtlHALN2M18=w240-h480-rw" alt="Logo de GolTv">
+  </div>
+    <nav>
+      <ul>
+        <li><a href="TrabajoFinal.html">Inicio</a></li>
+        <li><a href="partidos.html">Partidos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="clasificacion.html">Clasificación</a></li>
+        <li><a href="Formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="formulario-socio">
+  <h2>💛 ¡Hazte socio y participa en nuestro sorteo mensual! ⚽</h2>
+  <form class="form-sorteo" action="#" method="post">
+
+    <div class="campo">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej: David González" required>
+    </div>
+
+    <div class="campo">
+      <label>Género:</label>
+      <div class="opciones-genero">
+        <label><input type="radio" name="genero" value="Hombre" required> Hombre</label>
+        <label><input type="radio" name="genero" value="Mujer"> Mujer</label>
+        <label><input type="radio" name="genero" value="Otro"> Otro</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="1" max="120" required>
+    </div>
+
+    <div class="campo">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="tuemail@ejemplo.com" required>
+    </div>
+
+    <div class="campo">
+      <label for="comunidad">Comunidad Autónoma:</label>
+      <select id="comunidad" name="comunidad" required>
+        <option value="">Selecciona tu comunidad...</option>
+        <option>Andalucía</option>
+        <option>Aragón</option>
+        <option>Asturias</option>
+        <option>Islas Baleares</option>
+        <option>Canarias</option>
+        <option>Cantabria</option>
+        <option>Castilla-La Mancha</option>
+        <option>Castilla y León</option>
+        <option>Cataluña</option>
+        <option>Comunidad de Madrid</option>
+        <option>Comunidad Valenciana</option>
+        <option>Extremadura</option>
+        <option>Galicia</option>
+        <option>La Rioja</option>
+        <option>Murcia</option>
+        <option>Navarra</option>
+        <option>País Vasco</option>
+        <option>Ceuta</option>
+        <option>Melilla</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="provincia">Provincia:</label>
+      <select id="provincia" name="provincia" required>
+        <option value="">Selecciona tu provincia...</option>
+        <option>Álava</option>
+        <option>Albacete</option>
+        <option>Alicante</option>
+        <option>Almería</option>
+        <option>Asturias</option>
+        <option>Ávila</option>
+        <option>Badajoz</option>
+        <option>Barcelona</option>
+        <option>Burgos</option>
+        <option>Cáceres</option>
+        <option>Cádiz</option>
+        <option>Cantabria</option>
+        <option>Castellón</option>
+        <option>Ciudad Real</option>
+        <option>Córdoba</option>
+        <option>A Coruña</option>
+        <option>Cuenca</option>
+        <option>Girona</option>
+        <option>Granada</option>
+        <option>Guadalajara</option>
+        <option>Guipúzcoa</option>
+        <option>Huelva</option>
+        <option>Huesca</option>
+        <option>Jaén</option>
+        <option>La Rioja</option>
+        <option>Las Palmas</option>
+        <option>León</option>
+        <option>Lleida</option>
+        <option>Lugo</option>
+        <option>Madrid</option>
+        <option>Málaga</option>
+        <option>Murcia</option>
+        <option>Navarra</option>
+        <option>Ourense</option>
+        <option>Palencia</option>
+        <option>Pontevedra</option>
+        <option>Salamanca</option>
+        <option>Santa Cruz de Tenerife</option>
+        <option>Segovia</option>
+        <option>Sevilla</option>
+        <option>Soria</option>
+        <option>Tarragona</option>
+        <option>Teruel</option>
+        <option>Toledo</option>
+        <option>Valencia</option>
+        <option>Valladolid</option>
+        <option>Vizcaya</option>
+        <option>Zamora</option>
+        <option>Zaragoza</option>
+        <option>Ceuta</option>
+        <option>Melilla</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="domicilio">Domicilio:</label>
+      <input type="text" id="domicilio" name="domicilio" placeholder="Calle, número, ciudad..." required>
+    </div>
+
+    <div class="campo">
+      <label for="equipo">Equipo favorito:</label>
+      <input type="text" id="equipo" name="equipo" placeholder="Ej: Celta de Vigo" required>
+    </div>
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</section>
+
+</body>
+</html>

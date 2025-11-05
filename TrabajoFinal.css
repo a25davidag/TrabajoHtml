@@ -1,4 +1,19 @@
 /* === Inicio === */
+body.fondo-Inicio {
+  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 💎 Capa sutil oscura para resaltar el formulario */
+body.fondo-Inicio:before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
 
 body {
   font-family: "Poppins", Arial, sans-serif;
@@ -64,14 +79,12 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* ---------- SECCIONES -------- */
 section {
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
-/*------Noticias destacadas ------------- */
 
 .resumen-contenido {
   display: flex;
@@ -99,6 +112,22 @@ section {
 }
 /*-------------------------------partidos---------------------------*/
 /* ------- JORNADAS ----- */
+body.fondo-Partidos {
+  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 💎 Capa sutil oscura para resaltar el formulario */
+body.fondo-Partidos::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
 .jornadas {
   background: linear-gradient(90deg, #e30613, #ff4d4d);
   padding: 20px;
@@ -120,7 +149,6 @@ section {
   letter-spacing: 1px;
 }
 
-/* ======= PARTIDOS ======= */
 .partido {
   background: #f9f9f9;
   border-radius: 12px;
@@ -170,6 +198,23 @@ section {
   font-size: 1rem;
 }
 /*-------------- CLASIFICACIÓN ------------------*/
+
+body.fondo-Clasificacion {
+  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 💎 Capa sutil oscura para resaltar el formulario */
+body.fondo-Clasificacion::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #f3f4f6;
@@ -285,6 +330,22 @@ font-display: swap;
 }
 
 /* ---------- SECCIÓN NOTICIA DETALLADA ---------- */
+body.fondo-Noticia {
+  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 💎 Capa sutil oscura para resaltar el formulario */
+body.fondo-Noticia::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
 .noticia {
   background: #fff;
   border-radius: 16px;
@@ -339,3 +400,104 @@ margin-bottom: 25;
   margin-bottom: 18px;
 }
 
+/*--------------------------------formulario------------------------*/
+body.fondo-formulario {
+  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* 💎 Capa sutil oscura para resaltar el formulario */
+body.fondo-formulario::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+.formulario-socio {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.formulario-socio h2 {
+  color: #16030d;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+.form-sorteo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campo label {
+  font-weight: bold;
+  color: #16030d;
+  margin-bottom: 5px;
+}
+
+.form-sorteo input,
+.form-sorteo select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-sorteo input:focus,
+.form-sorteo select:focus {
+  border-color: #ffcc00;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.4);
+}
+
+.opciones-genero {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.opciones-genero label {
+  font-weight: normal;
+}
+
+.form-sorteo button {
+  background: linear-gradient(90deg, #16030d, #ffcc00);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.form-sorteo button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ffcc00, #16030d);
+  color: white;
+}
