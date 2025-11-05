@@ -5,7 +5,6 @@ body.fondo-Inicio {
   background-attachment: fixed;
 }
 
-/* 💎 Capa sutil oscura para resaltar el formulario */
 body.fondo-Inicio:before {
   content: "";
   position: fixed;
@@ -118,7 +117,7 @@ body.fondo-Partidos {
   background-attachment: fixed;
 }
 
-/* 💎 Capa sutil oscura para resaltar el formulario */
+
 body.fondo-Partidos::before {
   content: "";
   position: fixed;
@@ -200,12 +199,11 @@ body.fondo-Partidos::before {
 /*-------------- CLASIFICACIÓN ------------------*/
 
 body.fondo-Clasificacion {
-  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* 💎 Capa sutil oscura para resaltar el formulario */
 body.fondo-Clasificacion::before {
   content: "";
   position: fixed;
