@@ -1,11 +1,18 @@
-/* === Inicio === */
+/* === ESTILO GENERAL === */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* === FONDO PARA PÁGINA DE INICIO === */
 body.fondo-Inicio {
   background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-body.fondo-Inicio:before {
+body.fondo-Inicio::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
@@ -14,19 +21,7 @@ body.fondo-Inicio:before {
   z-index: -1;
 }
 
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  margin: 0;
-  background-color: #f5f5f5;
-  color: #222;
-}
-#resumen h2 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(184, 5, 5, 0.7);
-}
+/* === ENCABEZADO === */
 header {
   background: linear-gradient(10deg, #b31f29, #d8985cb6);
   color: white;
@@ -36,6 +31,7 @@ header {
   padding: 15px 30px;
   flex-wrap: wrap;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -48,6 +44,7 @@ header {
   border-radius: 50%;
 }
 
+/* === MENÚ DE NAVEGACIÓN === */
 nav ul {
   list-style: none;
   display: flex;
@@ -66,24 +63,29 @@ nav a {
 nav a:hover {
   color: #ffcc00;
 }
+
+/* === SECCIÓN ENCABEZADO DE INICIO === */
 .encabezado {
-  background: url("https://images.ecestaticos.com/Iwk5KDaNg4-gNrEUD8jx-XYSAFA=/0x174:2272x1451/1338x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F616%2F0f1%2F877%2F6160f1877ee2d6bde0e4467f634e2160.jpg") center/cover no-repeat;
+  background: url("https://images.ecestaticos.com/Iwk5KDaNg4-gNrEUD8jx-XYSAFA=/0x174:2272x1451/1338x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F616%2F0f1%2F877%2F6160f1877ee2d6bde0e4467f634e2160.jpg") 
+  center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
-  font: optional;
 }
+
 .encabezado-content {
   background: rgba(0, 0, 0, 0.6);
   display: inline-block;
   padding: 30px;
   border-radius: 15px;
 }
+
 .encabezado h2 {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
+/* === SECCIONES GENERALES === */
 section {
   padding: 50px 20px;
   max-width: 1200px;
@@ -91,6 +93,7 @@ section {
   text-align: center;
 }
 
+/* === RESUMEN DE JORNADA (INICIO) === */
 .resumen-contenido {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +103,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .resumen-jornada {
   background: white;
   border-radius: 12px;
@@ -108,21 +112,21 @@ section {
   padding: 15px;
   transition: transform 0.3s;
 }
+
 .resumen-jornada:hover {
   transform: translateY(-5px);
 }
+
 .resumen-jornada img {
   width: 100%;
   border-radius: 10px;
 }
-/*-------------------------------partidos---------------------------*/
-/* ------- JORNADAS ----- */
+
+/* === PARTIDOS === */
 body.fondo-Partidos {
   background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
-
 
 body.fondo-Partidos::before {
   content: "";
@@ -133,13 +137,7 @@ body.fondo-Partidos::before {
   z-index: -1;
 }
 
-.jornadas {
-  background: linear-gradient(90deg, #e30613, #ff4d4d);
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-.ligas{
+.jornadas, .ligas {
   background: linear-gradient(90deg, #e30613, #ff4d4d);
   padding: 20px;
   text-align: center;
@@ -198,16 +196,10 @@ body.fondo-Partidos::before {
   font-size: 1.2rem;
 }
 
-.partido p {
-  margin: 0.4rem 0;
-  font-size: 1rem;
-}
-/*-------------- CLASIFICACIÓN ------------------*/
-
+/* === CLASIFICACIÓN === */
 body.fondo-Clasificacion {
   background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 body.fondo-Clasificacion::before {
@@ -219,14 +211,6 @@ body.fondo-Clasificacion::before {
   z-index: -1;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f3f4f6;
-  margin: 0;
-  padding: 0;
-  color: #222;
-}
-
 .container {
   max-width: 900px;
   margin: 50px auto;
@@ -236,7 +220,7 @@ body {
   overflow: hidden;
 }
 
-/* -------- CABECERA ------ */
+/* Cabecera de tabla */
 .clasi {
   background: linear-gradient(90deg, #e30613, #ff4d4d);
   padding: 20px;
@@ -256,17 +240,14 @@ body {
   opacity: 0.9;
 }
 
-/* ------- TABLA ------- */
-.cabeceraTabla {
-  padding: 20px;
-}
-
+/* Tabla */
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
   font-size: 0.95rem;
 }
+
 table tr:first-child {
   background: #222;
   color: #fff;
@@ -287,9 +268,9 @@ tr:hover {
   transition: background 0.3s ease;
 }
 
-/* ------- EQUIPOS ------- */
+/* Equipos en tabla */
 .equipo {
-  font-display: flex;
+  font-display: auto;
   align-items: center;
   gap: 10px;
   text-align: left;
@@ -304,7 +285,7 @@ tr:hover {
 }
 
 .forma {
-font-display: swap;
+  font-display: auto;
   justify-content: center;
   gap: 6px;
 }
@@ -320,27 +301,16 @@ font-display: swap;
   font-size: 0.8rem;
 }
 
-/* Colores según resultado */
-.Victoria {
-  background: #2ecc71;
-}
+.Victoria { background: #2ecc71; }
+.Empate { background: #f1c40f; }
+.Perdido { background: #e74c3c; }
 
-.Empate {
-  background: #f1c40f;
-}
-
-.Perdido {
-  background: #e74c3c;
-}
-
-/* ---------- SECCIÓN NOTICIA DETALLADA ---------- */
+/* === NOTICIAS === */
 body.fondo-Noticia {
   background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-/* 💎 Capa sutil oscura para resaltar el formulario */
 body.fondo-Noticia::before {
   content: "";
   position: fixed;
@@ -350,68 +320,105 @@ body.fondo-Noticia::before {
   z-index: -1;
 }
 
+/* Contenedor noticia */
 .noticia {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.93);
+  margin: 40px auto;
+  width: 85%;
   padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: aparecer 0.8s ease;
 }
 
 .noticia:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-.titulo-noticia {
-  font-size: 2rem;
+.noticia h2, .noticia h3, .noticia h4, .noticia h5, .noticia h6 {
+  color: #b31f29;
   text-align: center;
-  margin-bottom: 25px;
-  color: #ffffff;
-  border-bottom: 3px solid #e30613; /* rojo del tema */
-  padding-bottom: 10px;
-  letter-spacing: 0.5px;
-  background-color:#0b213a;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: #16030d;
+  border-radius: 18%;
 }
+
 .imagen-noticia {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 25;
+  text-align: center;
+  margin: 20px 0;
 }
+
 .imagen-noticia img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
 }
 
 .imagen-noticia img:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
 }
 
-.texto-noticia {
-  font-size: 1.1rem;
-  color: #333;
+.noticia p {
+  color: #222;
+  font-size: 1.05rem;
+  line-height: 1.7;
   text-align: justify;
-  line-height: 1.8;
+  margin: 0 10px;
 }
 
-.texto-noticia p {
-  margin-bottom: 18px;
+/* === LISTAS DE RESULTADOS === */
+.listas {
+  background: rgba(255, 255, 255, 0.93);
+  width: 85%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  animation: aparecer 1s ease;
 }
 
-/*--------------------------------formulario------------------------*/
+.listas h3 {
+  color: #b31f29;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+ol, ul {
+  margin-left: 40px;
+  padding-left: 10px;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+ol li, ul li {
+  margin: 10px 0;
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+
+ol li:hover, ul li:hover {
+  color: #b31f29;
+  transform: translateX(5px);
+}
+
+/* === FORMULARIO === */
 body.fondo-formulario {
-  background: url("/Imagenes/Fondo3.png") no-repeat center center fixed;
+  background: url("/Imagenes/Fondo4.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-/* 💎 Capa sutil oscura para resaltar el formulario */
 body.fondo-formulario::before {
   content: "";
   position: fixed;
@@ -420,6 +427,7 @@ body.fondo-formulario::before {
   background: rgba(0, 0, 0, 0.45);
   z-index: -1;
 }
+
 .formulario-socio {
   max-width: 600px;
   margin: 60px auto;
@@ -430,11 +438,6 @@ body.fondo-formulario::before {
   backdrop-filter: blur(5px);
   text-align: center;
   animation: aparecer 0.8s ease;
-}
-
-@keyframes aparecer {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
 }
 
 .formulario-socio h2 {
@@ -484,12 +487,8 @@ body.fondo-formulario::before {
   flex-wrap: wrap;
 }
 
-.opciones-genero label {
-  font-weight: normal;
-}
-
 .form-sorteo button {
-background: linear-gradient(10deg, #b31f29, #d8985cb6);
+  background: linear-gradient(10deg, #b31f29, #d8985cb6);
   color: white;
   padding: 14px;
   border: none;
